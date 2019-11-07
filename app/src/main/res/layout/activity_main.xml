@@ -1,3 +1,9 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -5,22 +11,45 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context="com.example.android.justjava.MainActivity">
+    tools:context="com.example.android.justjava.MainActivity"
+    android:scrollbars="vertical"
+    >
 
+    <EditText
+        android:id="@+id/textEditField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/whiped_cream"
+        android:textSize="16sp"
+        android:paddingLeft="24dp"
+        />
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chocolate"
+        android:textSize="16sp"
+        android:paddingLeft="24dp"
+        />
     <TextView
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16sp"
 
-        android:text="QUANTITY"
+        android:text="@string/quantity"
         android:textSize="34sp" />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_gravity="center"
+        android:layout_gravity="left"
         android:padding="16dp"
         android:outlineSpotShadowColor="@color/colorAccent"
         tools:context="com.example.android.justjava.MainActivity">
@@ -40,7 +69,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16sp"
 
-            android:text="0"
+            android:text="1"
             android:textColor="#000000"
             android:textSize="34sp" />
 
@@ -53,22 +82,30 @@
             android:textSize="24sp" />
     </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16sp"
-        android:text="Price"
-        android:textSize="34sp" />
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginBottom="16sp"-->
+<!--        android:text="Order summery"-->
+<!--        android:textSize="34sp" />-->
 
-    <TextView
-        android:id="@+id/price_text_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+<!--    <TextView-->
+<!--        android:id="@+id/price_text_view"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
 
-        android:text="0"
-        android:textColor="#000000"
-        android:textSize="34sp" />
+<!--        android:text="@string/_0"-->
+<!--        android:textColor="#000000"-->
+<!--        android:textSize="34sp" />-->
+<!--    <TextView-->
+<!--        android:id="@+id/order_summery_text_view"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        android:text="@string/_0"-->
+<!--        android:textColor="#000000"-->
+<!--        android:textSize="34sp" />-->
 
 
     <Button
@@ -81,3 +118,4 @@
         android:textSize="24sp" />
 
 </LinearLayout>
+</ScrollView>
